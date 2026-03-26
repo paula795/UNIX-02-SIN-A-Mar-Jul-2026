@@ -20,3 +20,4 @@ gpg --output firma_separada_doc_no_cifrado.sig --detach-sign doc_no_cifrado.text
 documento
 gpg --verify firma_separada_doc_no_cifradoAriel.sig doc_no_cifrado.txt # Sirve para verificar la firma separa de mi compañero
 gpg --edit-key buitronariel23@gmail.com #Este comando se utiliza para dar el voto de confianza
+gpg --sign-key 3AFF0D971913C2E2 # Este comando se utiliza para firmar y certificar la confianza 
