@@ -25,3 +25,5 @@ history
 pwd 
 #It displays files and folders by adding a symbol at the end.
 ls -F
+#This displays the files and folders along with their inode number.
+ls -i
