@@ -21,7 +21,7 @@ saludobin
 cd /etc/gss
 Shows the command history again.
 history
-#It helps us see the directory path
+#It helps us see the directory path.
 pwd 
 #It displays files and folders by adding a symbol at the end.
 ls -F
