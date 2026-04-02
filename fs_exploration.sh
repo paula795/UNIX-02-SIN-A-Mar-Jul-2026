@@ -8,3 +8,5 @@ sudo apt update
 sudo apt upgrade
 # Install the parted tool on the system.
 sudo apt install parted
+# Displays disk and partition information (parted -l and lsblk -f) separated by lines to better organize the output.
+sudo parted -l && echo -e "/n---/n" && lsblk -f && echo -e "/n---/n"
