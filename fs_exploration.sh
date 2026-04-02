@@ -18,3 +18,11 @@ lsblk -f
 [ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS"
 # Execute the command on the right only if the one on the left fails.
 ||
+# Create the file test.txt with the text “my file”.
+echo "mi archivo" > test.txt
+# List the files in the directory, showing that test.txt exists.
+ls
+# muestra el contenido del archivo en la terminal.
+cat test.txt
+# muestra información del archivo, como tamaño, inodo, permisos y fechas.
+stat test.txt
