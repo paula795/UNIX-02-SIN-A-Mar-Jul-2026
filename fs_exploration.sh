@@ -16,3 +16,5 @@ sudo parted -l
 lsblk -f
 # Check if the system uses UEFI or BIOS, showing “UEFI” if that directory exists or “BIOS” if it does not.
 [ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS"
+# Execute the command on the right only if the one on the left fails.
+||
