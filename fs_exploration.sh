@@ -10,3 +10,7 @@ sudo apt upgrade
 sudo apt install parted
 # Displays disk and partition information (parted -l and lsblk -f) separated by lines to better organize the output.
 sudo parted -l && echo -e "/n---/n" && lsblk -f && echo -e "/n---/n"
+# List all disks and their partitions
+sudo parted -l
+# Displays the devices with their file system
+lsblk -f
