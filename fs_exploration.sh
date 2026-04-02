@@ -14,3 +14,5 @@ sudo parted -l && echo -e "/n---/n" && lsblk -f && echo -e "/n---/n"
 sudo parted -l
 # Displays the devices with their file system
 lsblk -f
+# Check if the system uses UEFI or BIOS, showing “UEFI” if that directory exists or “BIOS” if it does not.
+[ -d /sys/firmware/efi ] && echo "UEFI" || echo "BIOS"
