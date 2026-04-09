@@ -50,3 +50,18 @@ total 8
 #codespace root: user and group
 #4096: size
 #..: parent directory
+#
+stat .
+ File: .
+  Size: 4096            Blocks: 8          IO Block: 4096   directory
+Device: 7,4     Inode: 1572988     Links: 2
+Access: (0777/drwxrwxrwx)  Uid: ( 1000/codespace)   Gid: ( 1000/codespace)
+Access: 2026-04-09 12:19:03.443620973 +0000
+Modify: 2026-04-09 12:19:02.202621056 +0000
+Change: 2026-04-09 12:19:02.202621056 +0000
+ Birth: 2026-04-09 12:19:02.202621056 +0000
+
+Device: 7,4 
+#Explicacion
+#Device indica el disco o dispositivo donde está guardado el archivo o carpeta.
+#Ese número es un identificador interno del sistema para saber en qué disco o partición está tu archivo.
