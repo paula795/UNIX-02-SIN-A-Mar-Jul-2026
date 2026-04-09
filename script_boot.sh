@@ -66,3 +66,13 @@ Device: 7,4 Inode: 1572988     Links: 2
 #Device indica el disco o dispositivo donde está guardado el archivo o carpeta.
 #Ese número es un identificador interno del sistema para saber en qué disco o partición está tu archivo.
 #It indicates the unique number that identifies the file (Inode) and indicates how many references that file or directory has.(link)
+#Show the full route
+pwd
+# It displays the current user you are working with in the system.
+whoami
+#Indicates when each file was modified
+ls -lt
+#Show the header, that is, where the entire directory of etc. begins, and indicate that it should filter the first 20.
+ls /etc | head -20
+#Show the tail, that is, where the entire directory of etc. ends, and indicate that it should filter the last 20.
+ls /dev | tail -20
