@@ -61,7 +61,8 @@ Modify: 2026-04-09 12:19:02.202621056 +0000
 Change: 2026-04-09 12:19:02.202621056 +0000
  Birth: 2026-04-09 12:19:02.202621056 +0000
 
-Device: 7,4 
+Device: 7,4 Inode: 1572988     Links: 2
 #Explicacion
 #Device indica el disco o dispositivo donde está guardado el archivo o carpeta.
 #Ese número es un identificador interno del sistema para saber en qué disco o partición está tu archivo.
+#It indicates the unique number that identifies the file (Inode) and indicates how many references that file or directory has.(link)
