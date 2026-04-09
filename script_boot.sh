@@ -11,4 +11,7 @@ cd proyecto/
  cd
  # It takes us to the home directory (~ this symbol makes us move to the home directory because it is its symbol)
  cd ~ 
- #
+ #This command displays the contents of the PATH variable, which contains the paths where the system looks for executable programs.
+ echo $PATH
+ #This command takes you to the user's home directory (HOME), which is where your files are stored by default.
+ cd $HOME
