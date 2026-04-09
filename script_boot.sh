@@ -26,3 +26,27 @@ man ls
 #.. It represents the parent directory.
 #That is, the previous folder (the one that contains the current one).
 ls --all
+#This command displays the contents of the directory with detailed information
+ls -lai
+total 8
+1572988 drwxrwxrwx+ 2 codespace codespace 4096 Apr  9 12:19 .
+1572874 drwxrwxrwx+ 5 codespace root      4096 Apr  9 12:19 ..
+# Explication 
+#total 8
+#Indicates the total space used by the listed items in the directory.
+#First line
+#1572988: inode number
+#d: it is a directory
+#rwxrwxrwx+: Permissions (everyone has full access + extra permissions)
+##2: number of links
+#codespace codespace: owner user and group
+#4096: size in bytes
+#.: current directory
+#Second line
+#1572874: inode
+#d: directory
+#rwxrwxrwx+: permissions
+#5: links
+#codespace root: user and group
+#4096: size
+#..: parent directory
