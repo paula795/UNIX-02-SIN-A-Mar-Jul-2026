@@ -12,3 +12,15 @@ ls -lah
 mkdir -- -rf
 #What it does is delete the created file
 rmdir -- -rf
+#The `ls --help` command is used to display the help for the ls command, which details all available options, their meaning, and how to use them.
+ls --help
+# The man ls command is used to open the complete manual for the `ls` command.
+man ls 
+#The command man git-clone displays the manual for the git clone command, explaining its options and usage.
+man git-clone
+#The --depth option in Git allows you to clone a repository with a limited commit history, downloading only the most recent commits. This makes the process faster and lighter, as it doesn't include the entire project history.
+#--depth <depth>
+           #Create a shallow clone with a history truncated to the specified number of commits. Implies
+           #--single-branch unless --no-single-branch is given to fetch the histories near the tips of all branches.
+           #If you want to clone submodules shallowly, also pass --shallow-submodules.
+--depth
