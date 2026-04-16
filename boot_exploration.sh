@@ -8,3 +8,7 @@ ls --all
 ls -l -a -h
 #The command ls -lah performs exactly the same function as the previous one, since it combines the -l, -a and -h options into a single abbreviated form.
 ls -lah
+#It allows you to create a directory whose name is -rf. When using the -, the information is not presented as options but as plain text.
+mkdir -- -rf
+#What it does is delete the created file
+rmdir -- -rf
