@@ -40,3 +40,5 @@ sudo chmod +x init
 sudo echo "hola" > etc/archivo_protegido
 #The command `echo "hello" | sudo tee /etc/protected_file > /dev/null` writes the text "hello" to a file protected using sudo. `tee` is used to give administrator privileges for writing, and `> /dev/null` prevents the text from being displayed on the screen.
 echo "hola" | sudo tee /etc/archivo_protegido > /dev/null
+#The command cat etc/protected_file displays the contents of the protected_file in the terminal.
+cat etc/archivo_protegido
