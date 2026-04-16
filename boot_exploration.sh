@@ -33,4 +33,4 @@ chmod u+x script.sh
 # It is used to remove reading from others 
 chmod o-r secreto.txt
 # It is used only so that the owner can read and write 
-chmod u+rw,go-rwx rpivado
+chmod u+rw,go-rwx privado
