@@ -34,3 +34,9 @@ chmod u+x script.sh
 chmod o-r secreto.txt
 # It is used only so that the owner can read and write 
 chmod u+rw,go-rwx privado
+#The command sudo chmod +x init gives execution permission to the init file using administrator privileges.
+sudo chmod +x init
+#The command `sudo echo "hello" > etc/protected_file` attempts to write the text "hello" to a protected file, but it may fail because the redirection (>) is not executed with `sudo`.
+sudo echo "hola" > etc/archivo_protegido
+#The command `echo "hello" | sudo tee /etc/protected_file > /dev/null` writes the text "hello" to a file protected using sudo. `tee` is used to give administrator privileges for writing, and `> /dev/null` prevents the text from being displayed on the screen.
+echo "hola" | sudo tee /etc/archivo_protegido > /dev/null
