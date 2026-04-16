@@ -24,3 +24,13 @@ man git-clone
            #--single-branch unless --no-single-branch is given to fetch the histories near the tips of all branches.
            #If you want to clone submodules shallowly, also pass --shallow-submodules.
 --depth
+# It was used to create a .sh file
+touch script.sh
+# It is used to grant permissions so that everyone can run it.
+chmod +x script.sh
+# It is used to grant permissions, and only the owner can execute them.
+chmod u+x script.sh
+# It is used to remove reading from others 
+chmod o-r secreto.txt
+# It is used only so that the owner can read and write 
+chmod u+rw,go-rwx rpivado
