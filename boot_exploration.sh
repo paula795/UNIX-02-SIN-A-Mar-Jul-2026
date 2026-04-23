@@ -42,3 +42,5 @@ sudo echo "hola" > etc/archivo_protegido
 echo "hola" | sudo tee /etc/archivo_protegido > /dev/null
 #The command cat etc/protected_file displays the contents of the protected_file in the terminal.
 cat etc/archivo_protegido
+#This command uses administrator privileges to execute an echo that appends text to the end of a protected file in /etc, using redirection >> within a sh -c so that the entire operation has root privileges.
+sudo sh -c 'echo "chao" >> /etc/archivo_protegido'
