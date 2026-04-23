@@ -70,3 +70,11 @@ ls -l hola.sh
 chmod +x hola.sh
 #Run the script again
 ./hola.sh
+#/etc stores system configuration files. It's used to see what configurations exist.
+ls /etc
+#Create an empty file named test.txt in /etc. If it already exists, just update the date
+touch /etc/prueba.txt
+#Create a folder in your home directory. ~ means “home” (your personal space).
+mkdir ~/mi_carpeta
+#Use the APT package manager to install a program. In this case, install cowsay.
+apt install cowsay
