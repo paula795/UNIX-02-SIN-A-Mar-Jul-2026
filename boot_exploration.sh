@@ -56,3 +56,17 @@ exit
 echo "$HOME"
 #It treats it as a string and prints it as if it were text.
 echo '$HOME'
+#Create the file hello.sh and add the line that indicates it is a shell script
+echo '#!/bin/sh' > hola.sh
+#Try adding a line to the script
+echo 'echo "Hola desde mi primer script"' >> hola.sh
+#Displays the contents of the file
+cat hola.sh
+#Run the script
+./hola.sh
+#Show file permissions
+ls -l hola.sh
+#It is used to give execution permission to the file hola.sh
+chmod +x hola.sh
+#Run the script again
+./hola.sh
