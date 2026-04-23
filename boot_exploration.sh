@@ -52,3 +52,7 @@ sudo su
 sudo su-
 #It is used to exit the current session.
 exit 
+#Expand the variable, show the content and the path where it is located
+echo "$HOME"
+#It treats it as a string and prints it as if it were text.
+echo '$HOME'
