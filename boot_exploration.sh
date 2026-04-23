@@ -78,3 +78,13 @@ touch /etc/prueba.txt
 mkdir ~/mi_carpeta
 #Use the APT package manager to install a program. In this case, install cowsay.
 apt install cowsay
+#Create an empty file named test.txt. If it already exists, just update the date.
+touch prueba.txt
+#Change the file permissions
+chmod 600 prueba.txt
+#Displays file permissions
+ls -l prueba.txt
+#Change permissions
+chmod 755 prueba.txt
+# Show the changed permissions again
+ls -l prueba.txt
