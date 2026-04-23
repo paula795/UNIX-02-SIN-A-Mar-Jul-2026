@@ -44,3 +44,11 @@ echo "hola" | sudo tee /etc/archivo_protegido > /dev/null
 cat etc/archivo_protegido
 #This command uses administrator privileges to execute an echo that appends text to the end of a protected file in /etc, using redirection >> within a sh -c so that the entire operation has root privileges.
 sudo sh -c 'echo "chao" >> /etc/archivo_protegido'
+#It makes the change to the root
+sudo -i
+#Switch to root user (full administrator mode)
+sudo su
+#Switch to root user (full administrator mode)
+sudo su-
+#It is used to exit the current session.
+exit 
