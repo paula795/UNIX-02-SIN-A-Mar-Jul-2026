@@ -1,9 +1,9 @@
-# Este comando se encarga de mostrar en una lista los archivos que se encuntran en el directorio actual.
+# This command displays a list of the files located in the current directory.
 ls 
-# Este comando se encarga de mostrar todos los archivos que se encuentran dentro de solo ese directorio, en nuestro caso no tenemos ese directorio por eso recibimos como resultado que no esta disponible
+# This command displays all files located within a specific directory. In our case, we don't have that directory, so we receive the result that it's unavailable.
 ls documents
-# Al intentar ejecutar este comando nos salio "bash: aptitude: command not found" que basicamente nos indica que el comando aptitude no está instalado en el sistema, lo cual lo solucionamos con los siguientes comaandos:
-#aptitude moo es un comando recreativo que no cumple una función técnica, sino que es una característica oculta
+# When trying to run this command, we got "bash: aptitude: command not found," which basically indicates that the aptitude command is not installed on the system. We solved this with the following commands:
+#aptitude moo is a recreational command that doesn't serve a technical function; it's a hidden feature.
 aptitude moo
 sudo apt update
 sudo apt install aptitude
