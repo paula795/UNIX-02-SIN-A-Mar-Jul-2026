@@ -7,3 +7,5 @@ ls documents
 aptitude moo
 sudo apt update
 sudo apt install aptitude
+# ls -l is used to view complete and detailed information about files and directories, not just their names.
+ls -l
