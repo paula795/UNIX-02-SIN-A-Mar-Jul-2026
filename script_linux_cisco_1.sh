@@ -11,3 +11,7 @@ sudo apt install aptitude
 ls -l
 #The -r option in the ls command is used to reverse the order in which the files are listed, showing the most recent ones first.
 ls -r 
+# The -l and -r options can be combined in the ls command regardless of the order, as they produce the same result: listing files with detailed information in reverse order.
+ls -l -r
+ls -rl
+ls -lr
