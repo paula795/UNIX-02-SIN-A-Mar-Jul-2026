@@ -15,3 +15,7 @@ ls -r
 ls -l -r
 ls -rl
 ls -lr
+# Use the -v option twice separately. Each -v increases the level of detail (or changes the Easter Egg message).
+aptitude -v -v moo
+#The options are combined into a single block (-vv).
+aptitude -vv moo
