@@ -33,3 +33,5 @@ mdkir -p Documents/School/Art
 cd 
 # This command allows you to go up one level in the directory structure, that is, it moves you to the parent directory of the current directory.
 cd ..
+# This command displays a detailed list of all files and directories within the /var/log/ path, which is where the Linux system stores logs. The -l option allows you to view information such as permissions, owner, size, and modification date for each file.explained listing of system logs 
+ls -l /var/log/
