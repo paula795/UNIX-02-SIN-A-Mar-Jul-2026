@@ -23,3 +23,13 @@ aptitude -vv moo
 pwd
 # To make directory changes, create the documents directory
 mkdir documents
+# This command is used to change directories; in this case, we used "documents" as an argument to move to that directory.
+cd documents
+# `cd /` is used to go directly to the system's root directory
+cd /
+# This command creates a directory structure. The -p option allows you to create multiple folders at once (Documents, School, and Art).
+mdkir -p Documents/School/Art
+# This command takes us directly to the user's home directory, regardless of our location.
+cd 
+# This command allows you to go up one level in the directory structure, that is, it moves you to the parent directory of the current directory.
+cd ..
