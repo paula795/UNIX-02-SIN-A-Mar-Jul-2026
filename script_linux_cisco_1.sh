@@ -21,3 +21,5 @@ aptitude -v -v moo
 aptitude -vv moo
 #The pwd command prints the working directory, the current location where we are located.
 pwd
+# To make directory changes, create the documents directory
+mkdir documents
