@@ -9,3 +9,5 @@ sudo apt update
 sudo apt install aptitude
 # ls -l is used to view complete and detailed information about files and directories, not just their names.
 ls -l
+#The -r option in the ls command is used to reverse the order in which the files are listed, showing the most recent ones first.
+ls -r 
