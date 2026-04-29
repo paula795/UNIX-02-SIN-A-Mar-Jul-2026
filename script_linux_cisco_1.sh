@@ -35,3 +35,11 @@ cd
 cd ..
 # This command displays a detailed list of all files and directories within the /var/log/ path, which is where the Linux system stores logs. The -l option allows you to view information such as permissions, owner, size, and modification date for each file.explained listing of system logs 
 ls -l /var/log/
+# The -t option will sort the files by their timestamp.
+ls -lt /var/log 
+# The -S (size) option will sort the files by file size
+ls -l -S /var/log
+# The -r (reverse) option will reverse the order of any sorting type.
+ls -lSr /var/log
+# Using only the -r option with the file list in reverse alphabetical order
+ls -r /var/log 
