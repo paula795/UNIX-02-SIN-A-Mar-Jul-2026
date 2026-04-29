@@ -19,3 +19,5 @@ ls -lr
 aptitude -v -v moo
 #The options are combined into a single block (-vv).
 aptitude -vv moo
+#The pwd command prints the working directory, the current location where we are located.
+pwd
