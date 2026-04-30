@@ -64,3 +64,6 @@ export PATH=$PATH:/usr/games
 sl 
 # The `sudo sl` command doesn't work even if the program is installed because `sudo` uses a restricted PATH variable that doesn't include the `/usr/games` directory, where the executable is located. To fix this, you must run the command with its full path (`sudo /usr/games/sl`).
 sudo /usr/games/sl
+#Seccion seven 
+#It is used to access the required directory.
+cd documnts
