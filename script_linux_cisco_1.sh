@@ -101,3 +101,5 @@ nano hello.sh #(Content creation)
 3 bat                                                                  
 4 wolf                                                                  
 5 eagle
+# We use this command to view the contents within the animals.txt file
+cat animals.txt
