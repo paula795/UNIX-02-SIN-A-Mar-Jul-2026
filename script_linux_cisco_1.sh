@@ -71,3 +71,5 @@ cd documnts
 touch hellpo.sh
 #When you list a file with the ls -l command, the output includes information about its permissions.
 ls -l hello.sh
+#  Se utiliza para cambiar los permisos del archivo original dependiendo de lo ue nosotros neceitemos darle 
+chmod u+x hello.sh 
