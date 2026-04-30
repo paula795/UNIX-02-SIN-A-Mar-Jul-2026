@@ -82,5 +82,5 @@ nano hello.sh
 # The first line, #!/bin/bash, specifies the interpreter that will be used to run the file; in this case, the Bash shell. The second line uses the echo command to display the message "Hello World!" on the screen when the script is executed.
 !/bin/bash
 echo "Hello World!"
-#
+# Run the hello.sh script from the current directory.
 ./hello.sh     
