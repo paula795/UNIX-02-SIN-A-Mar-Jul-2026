@@ -95,7 +95,7 @@ sudo ./hello.sh
 #Seccion ten
 # What it asks us to do is run the cat command, but since we don't have the file it's asking for in our directory, we have to create it and increase the file's contents, for which we use:
 touch animals.txt #(File creation)
-nano hello.sh #(Content creation)
+nano animals.txt #(Content creation)
 1 retriever                                                             
 2 badger                                                                
 3 bat                                                                  
@@ -103,3 +103,32 @@ nano hello.sh #(Content creation)
 5 eagle
 # We use this command to view the contents within the animals.txt file
 cat animals.txt
+# What it asks us to do is run the cat command, but since we don't have the file it's asking for in our directory, we have to create it and increase the file's contents, for which we use:
+touch alpha.txt     #(File creation)
+nano alpha.txt     #(Content creation)
+A is for Apple                    
+B is for Bear           
+C is for Cat                      
+D is for Dog                               
+E is for Elephant                                      
+F is for Flower       
+G is for Grapes                     
+H is for Happy                                     
+I is for Ink                                                         
+J is for Juice                                   
+K is for Kangaroo
+L is for Lol                                                             
+M is for Monkey                       
+N is for Nickel                             
+O is for Oval                  
+P is for Pickle       
+Q is for Quark                         
+R is for Rat                          
+S is for Sloth                       
+T is for Turnip                        
+U is for Up                                     
+V is for Velvet                       
+W is for Walrus                    
+X is for Xenon                        
+Y is for Yellow         
+Z is for Zebra    
