@@ -43,3 +43,11 @@ ls -l -S /var/log
 ls -lSr /var/log
 # Using only the -r option with the file list in reverse alphabetical order
 ls -r /var/log 
+# This command is used to temporarily act as a different user (root).
+su -
+su -l
+su --login
+# The `sudo su` command allows you to switch to the root user using administrator privileges. `sudo` grants elevated permissions, `su` switches users, and `-` loads the full root user environment, simulating a full login.
+sudo su - (This extra command was used to demonstrate that it works to log in as root)
+# We use this command to close the root user session and return to normal.
+exit 
