@@ -131,4 +131,6 @@ V is for Velvet
 W is for Walrus                    
 X is for Xenon                        
 Y is for Yellow         
-Z is for Zebra    
+Z is for Zebra 
+# This command displays the contents within the alpha.txt document.
+cat alpha.txt
