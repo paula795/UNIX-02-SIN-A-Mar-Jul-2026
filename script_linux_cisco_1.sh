@@ -92,3 +92,12 @@ ls -l hello.sh
 ./hello.sh 
 # The file can only be executed by the root user, so the use of sudo is required to obtain the necessary permissions.
 sudo ./hello.sh   
+#Seccion ten
+# What it asks us to do is run the cat command, but since we don't have the file it's asking for in our directory, we have to create it and increase the file's contents, for which we use:
+touch animals.txt #(File creation)
+nano hello.sh #(Content creation)
+1 retriever                                                             
+2 badger                                                                
+3 bat                                                                  
+4 wolf                                                                  
+5 eagle
