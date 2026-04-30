@@ -51,3 +51,14 @@ su --login
 sudo su - (This extra command was used to demonstrate that it works to log in as root)
 # We use this command to close the root user session and return to normal.
 exit 
+#Administrative access section six
+#Update the list of packages available in the system repositories.
+sudo apt update
+#Install the sl (Steam Locomotive) program on the system using administrator privileges.
+sudo apt install sl
+#Allows switching to the root user
+sudo -su
+#Add the path /usr/games to the PATH environment variable so that the system can find and run programs located in that directory.
+export PATH=$PATH:/usr/games
+#Run the program sl, which displays an animation of a train at the terminal.
+sl 
