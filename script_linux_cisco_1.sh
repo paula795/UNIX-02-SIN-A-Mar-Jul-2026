@@ -69,3 +69,5 @@ sudo /usr/games/sl
 cd documnts
 # This command was used to create the file within the directory we requested.
 touch hellpo.sh
+#When you list a file with the ls -l command, the output includes information about its permissions.
+ls -l hello.sh
