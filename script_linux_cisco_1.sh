@@ -79,4 +79,8 @@ ls -l hello.sh
 #Since our file didn't contain any information, the following was executed:
 # We used this command to write the desired information inside our file
 nano hello.sh
+# The first line, #!/bin/bash, specifies the interpreter that will be used to run the file; in this case, the Bash shell. The second line uses the echo command to display the message "Hello World!" on the screen when the script is executed.
+!/bin/bash
+echo "Hello World!"
+#
 ./hello.sh     
