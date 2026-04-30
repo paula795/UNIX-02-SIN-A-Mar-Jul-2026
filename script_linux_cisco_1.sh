@@ -134,3 +134,5 @@ Y is for Yellow
 Z is for Zebra 
 # This command displays the contents within the alpha.txt document.
 cat alpha.txt
+# To view only the first few lines of the previous result for the file
+head alpha.txt 
