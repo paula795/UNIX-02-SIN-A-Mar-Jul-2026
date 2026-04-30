@@ -86,3 +86,5 @@ echo "Hello World!"
 ./hello.sh     
 # This command was used to change the owner of a file; all of this is done in the documents directory.
 sudo chown root hello.sh
+# I used it for the verification of the change of ownership
+ls -l hello.sh
