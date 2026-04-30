@@ -140,3 +140,5 @@ head alpha.txt
 tail alpha.txt 
 # This command n-# is used to specify how many lines you want to see; in this case: see the first five lines of the alpha.txt file.
 head -n 5 alpha.txt  
+# This n-# command is used to specify how many lines you want to view; in this case: view the last five lines of the alpha.txt file.
+tail -n 5 alpha.txt 
