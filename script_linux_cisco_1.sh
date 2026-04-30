@@ -144,3 +144,5 @@ head -n 5 alpha.txt
 tail -n 5 alpha.txt 
 # This command copies the /etc/passwd file from its original location on the system to the current directory. The dot (.) represents the working directory, so the file is saved as a copy in that location.
 cp /etc/passwd .
+# This command allows us to verify that the copy was made.
+ls
