@@ -71,5 +71,12 @@ cd documnts
 touch hellpo.sh
 #When you list a file with the ls -l command, the output includes information about its permissions.
 ls -l hello.sh
-#  Se utiliza para cambiar los permisos del archivo original dependiendo de lo ue nosotros neceitemos darle 
+#  It is used to change the permissions of the original file depending on what we need to give it.
 chmod u+x hello.sh 
+# When you list a file with the ls -l command, the output includes information about its permissions. The owner user now has permission to execute
+ls -l hello.sh 
+# Message inside the file
+#Since our file didn't contain any information, the following was executed:
+# We used this command to write the desired information inside our file
+nano hello.sh
+./hello.sh     
