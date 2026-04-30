@@ -136,3 +136,5 @@ Z is for Zebra
 cat alpha.txt
 # To view only the first few lines of the previous result for the file
 head alpha.txt 
+# It is used to view the last lines of the file
+tail alpha.txt 
