@@ -138,3 +138,5 @@ cat alpha.txt
 head alpha.txt 
 # It is used to view the last lines of the file
 tail alpha.txt 
+# This command n-# is used to specify how many lines you want to see; in this case: see the first five lines of the alpha.txt file.
+head -n 5 alpha.txt  
