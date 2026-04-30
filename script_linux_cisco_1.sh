@@ -67,3 +67,5 @@ sudo /usr/games/sl
 #Seccion seven 
 #It is used to access the required directory.
 cd documnts
+# This command was used to create the file within the directory we requested.
+touch hellpo.sh
