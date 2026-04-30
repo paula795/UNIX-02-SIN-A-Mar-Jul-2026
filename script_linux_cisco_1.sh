@@ -62,3 +62,5 @@ sudo -su
 export PATH=$PATH:/usr/games
 #Run the program sl, which displays an animation of a train at the terminal.
 sl 
+# The `sudo sl` command doesn't work even if the program is installed because `sudo` uses a restricted PATH variable that doesn't include the `/usr/games` directory, where the executable is located. To fix this, you must run the command with its full path (`sudo /usr/games/sl`).
+sudo /usr/games/sl
