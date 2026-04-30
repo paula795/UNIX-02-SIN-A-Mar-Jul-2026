@@ -142,3 +142,5 @@ tail alpha.txt
 head -n 5 alpha.txt  
 # This n-# command is used to specify how many lines you want to view; in this case: view the last five lines of the alpha.txt file.
 tail -n 5 alpha.txt 
+# This command copies the /etc/passwd file from its original location on the system to the current directory. The dot (.) represents the working directory, so the file is saved as a copy in that location.
+cp /etc/passwd .
