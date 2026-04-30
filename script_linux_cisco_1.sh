@@ -88,3 +88,7 @@ echo "Hello World!"
 sudo chown root hello.sh
 # I used it for the verification of the change of ownership
 ls -l hello.sh
+# This command was executed, which gave us the error "permission denied", thus confirming that the previous commands were executed correctly.
+./hello.sh 
+# The file can only be executed by the root user, so the use of sudo is required to obtain the necessary permissions.
+sudo ./hello.sh   
