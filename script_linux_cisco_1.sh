@@ -146,3 +146,5 @@ tail -n 5 alpha.txt
 cp /etc/passwd .
 # This command allows us to verify that the copy was made.
 ls
+# This command creates a 50 MB archive in the /tmp/swapex directory. It uses dd, which is a tool for copying and generating data.
+dd if=/dev/zero of=/tmp/swapex bs=1M count=50
