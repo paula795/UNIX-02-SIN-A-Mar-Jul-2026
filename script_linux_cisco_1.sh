@@ -84,3 +84,5 @@ nano hello.sh
 echo "Hello World!"
 # Run the hello.sh script from the current directory.
 ./hello.sh     
+# This command was used to change the owner of a file; all of this is done in the documents directory.
+sudo chown root hello.sh
