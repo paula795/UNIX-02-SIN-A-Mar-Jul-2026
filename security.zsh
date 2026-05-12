@@ -50,3 +50,13 @@ useradd -m -s /usr/bin/zsh paula
 chown paula mi_archivo
 # Displays detailed information about the file my_file, including permissions, owner, group, and size.
 ls -l mi_archivo
+# Displays the groups to which the current user belongs.
+groups
+# Create a new group called group_test in the system.
+groupadd grupo_test
+# Displays the contents of the /etc/group file, where the existing system groups are stored.
+cat /etc/group
+# Create an empty file called common. 
+touch comun 
+# Displays detailed information about the common file
+ls -l comun 
