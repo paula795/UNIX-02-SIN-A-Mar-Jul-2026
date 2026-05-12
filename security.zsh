@@ -66,3 +66,7 @@ usermod -a -G grupo_test paula
 chgrp grupo_test comun
 #  Displays detailed information about the common file to verify the group change.
 ls -l comun
+# Change the owner of the file my_file to the user paula and the owner group to group_test at the same time.
+chown paula:grupo_test mi_archivo
+# Displays detailed information about the file my_file to verify the change of owner user and group.
+ls -l mi_archivo
