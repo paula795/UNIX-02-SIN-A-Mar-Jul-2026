@@ -38,3 +38,15 @@ mkdir privado
 ls -l
 #Restores a more common permission mask, allowing reading for the group and other users on new files and directories.
 umask 022
+# Displays the name of the current user who is using the system.
+whoami
+# Write the text "Hello" inside the file my_file. If the file does not exist, create it; if it exists, replace its contents.
+echo "Hola" > mi_archivo
+# Displays detailed information about the file my_file, including permissions, owner, size, and modification date.
+ls -l mi_archivo
+# Create a new user named paula, automatically generating their home folder and assigning zsh as the default shell.
+useradd -m -s /usr/bin/zsh paula
+# Change the owner of the file my_file to the user paula.
+chown paula mi_archivo
+# Displays detailed information about the file my_file, including permissions, owner, group, and size.
+ls -l mi_archivo
