@@ -28,3 +28,13 @@ touch archivo3
 mkdir directorio3
 # It displays files and directories with detailed information on permissions, owner, size, and date.
 ls -l 
+# Configure a very restrictive permission mask. Only the owner will have access to newly created files and directories.
+umask 077
+# Create an empty file called secret.txt applying the permissions defined by umask 077.
+touch secreto.txt
+# Create a directory called private with private permissions for the owner.
+mkdir privado
+# Displays permissions and details of created files and directories.
+ls -l
+#Restores a more common permission mask, allowing reading for the group and other users on new files and directories.
+umask 022
