@@ -70,3 +70,11 @@ ls -l comun
 chown paula:grupo_test mi_archivo
 # Displays detailed information about the file my_file to verify the change of owner user and group.
 ls -l mi_archivo
+# It automatically creates the project directory and the subdirectory sub. The -p option allows creating nested directories without generating errors if one already exists.
+mkdir -p proyecto/sub
+# Create two empty files: readme inside the project directory and data inside the project/sub subdirectory.
+touch proyecto/readme proyecto/sub/datos
+# Recursively changes the owner and group of the entire project directory, including its files and subdirectories, assigning them to the user paula and the group grupo_test.
+chown -R paula:grupo_test proyecto
+# Recursively displays the contents of the project directory with detailed information on permissions, owners, groups, and files.
+ls -lR proyecto
