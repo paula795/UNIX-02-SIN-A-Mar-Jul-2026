@@ -60,3 +60,9 @@ cat /etc/group
 touch comun 
 # Displays detailed information about the common file
 ls -l comun 
+# Add the user paula to the secondary group group_test without removing their other groups.
+usermod -a -G grupo_test paula
+# Change the common file owner group to the group group_test.
+chgrp grupo_test comun
+#  Displays detailed information about the common file to verify the group change.
+ls -l comun
