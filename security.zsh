@@ -109,3 +109,11 @@ grep "desarrolladores\|operaciones\|servicios_web" /etc/group
 grep -E "desarrolladores|operaciones|servicios_web" /etc/group
 # Search and display within the /etc/login.defs file the configurations related to group identifier (GID) ranges
 grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs
+# Create a new group called design using the system's default settings to automatically assign its GID.
+addgroup diseno
+# Create a group called marketing by manually assigning it the GID 2100.
+addgroup --gid 2100 marketing
+# Create a system group called cache_web, reserved for internal operating system services or processes.
+addgroup --system cache_web
+# Search and display in the /etc/group file the information corresponding to the design, marketing and cache_web groups to verify that they were created correctly.
+grep "diseno\|marketing\|cache_web" /etc/group
