@@ -91,3 +91,21 @@ id -u
 id -g
 # All group id
 id -G
+# What happens is that grep filters the codespace within `cat /etc/group | grep root` 
+cat /etc/group| grep codespace 
+# Create a new directory called project_unix inside the user's home directory (~ represents the current user's home).
+mkdir ~/proyecto_unix/
+# Displays the contents of the project_unix directory in detailed format, including permissions, owner, size, and hidden files thanks to the -l and -a options.
+ls -la ~/proyecto_unix/
+# Create a simple group
+groupadd desarrolladores  
+# Specific GID
+groupadd -g 2000 operaciones 
+# Create a system group called web_services.
+groupadd --system servicios_web
+# Verify that the groups have been created
+grep "desarrolladores\|operaciones\|servicios_web" /etc/group
+# Verify that the groups have been created
+grep -E "desarrolladores|operaciones|servicios_web" /etc/group
+# Search and display within the /etc/login.defs file the configurations related to group identifier (GID) ranges
+grep "GID_MIN\|GID_MAX\|SYS_GID" /etc/login.defs
