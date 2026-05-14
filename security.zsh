@@ -78,3 +78,7 @@ touch proyecto/readme proyecto/sub/datos
 chown -R paula:grupo_test proyecto
 # Recursively displays the contents of the project directory with detailed information on permissions, owners, groups, and files.
 ls -lR proyecto
+# View the current user's numerical identity
+id 
+# View all system users
+cat /etc/passwd | head -10 
