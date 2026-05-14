@@ -82,3 +82,12 @@ ls -lR proyecto
 id 
 # View all system users
 cat /etc/passwd | head -10 
+# Show root
+groups paula
+#View the current user's UID and GID
+# User id
+id -u
+# Group primary id
+id -g
+# All group id
+id -G
