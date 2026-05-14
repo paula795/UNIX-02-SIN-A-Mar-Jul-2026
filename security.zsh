@@ -117,3 +117,17 @@ addgroup --gid 2100 marketing
 addgroup --system cache_web
 # Search and display in the /etc/group file the information corresponding to the design, marketing and cache_web groups to verify that they were created correctly.
 grep "diseno\|marketing\|cache_web" /etc/group
+# Add the root user to the secondary group developers without removing it from the other groups it already belongs to, using the -aG option.
+usermod -aG desarrolladores root
+# Add the root user to the design group as a subgroup. The -aG option allows you to add the user to the group without removing them from any other groups they already belong to.
+usermod -aG diseno root
+# Create a new group called temporary_group in the Linux system.
+groupadd grupo_temporal
+# Add the root user to the temporary group group without removing it from the other existing groups.
+usermod -aG grupo_temporal root
+# Displays root user information
+id root 
+# Modify the root user's secondary groups
+usermod -G desarrolladores root
+# Displays root user information
+id root 
