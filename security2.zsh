@@ -9,8 +9,22 @@ ls -la ~/test_grupo_heredado.txt
 # Show only the name of the main group  
 id -gn 
 # It is used to verify which is the main active group before making changes with newgrp.
-echo "Grupo actual:$(id-gn)
+echo "Grupo actual:$(id-gn)"
 # This command creates a file to check which group inherits the file when it is created.
 touch ~/antes_de_newgrp.txt
 #It displays detailed file information, including permissions, owner, and the group it inherited upon creation.
 ls -la ~/antes_de_newgrp.txt 
+# Update the system's list of available packages and repositories.
+apt update 
+# Update installed programs and packages to their latest versions.
+apt upgrade 
+# Install additional system packages, including tools related to Linux users, groups, and utilities.
+apt install uidmap util-linux-extra
+# create the developers group
+groupadd desarrolladores  
+# Temporarily change the active primary group to the developers group.
+newgrp desarrolladores 
+# It only displays the name of the user's active primary group.
+id -gn
+# Displays the name of the new active group using the result of the id -gn command.
+echo "Nuevo grupo activo: $(id -gn)"
