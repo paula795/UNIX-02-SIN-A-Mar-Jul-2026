@@ -36,3 +36,14 @@ ls -la ~/dentro_de_newgrp.txt
 mkdir -p ~/proyecto_dev/src
 # Displays all files and folders in the personal directory with detailed information.
 ls -la ~/
+# Close the current session or exit the newgrp environment, restoring the previous group.
+exit
+# Displays the name of the active primary group after exiting newgrp.
+id -gn
+# Displays on screen the name of the restored group using the result of the id -gn command.
+echo "Grupo restaurado: $(id -gn)"
+# It displays detailed information from both files to compare the group each inherited before and after using newgrp.
+ls -la ~/antes_de_newgrp.txt ~/dentro_de_newgrp.txt 
+#-rw-r--r-- 1 root root            0 may 28 12:51 /root/antes_de_newgrp.txt
+#-rw-r--r-- 1 root desarrolladores 0 may 28 13:21 /root/dentro_de_newgrp.txt
+                                                                                   
