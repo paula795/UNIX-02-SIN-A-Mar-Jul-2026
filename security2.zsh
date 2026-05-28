@@ -28,3 +28,11 @@ newgrp desarrolladores
 id -gn
 # Displays the name of the new active group using the result of the id -gn command.
 echo "Nuevo grupo activo: $(id -gn)"
+# Creates a file inside the subshell
+touch ~/dentro_de_newgrp.txt   
+# It displays detailed file information, including permissions, owner, and inherited group.
+ls -la ~/dentro_de_newgrp.txt  
+# Create the project_dev folder and the src subfolder; the -p option allows you to create intermediate directories automatically.
+mkdir -p ~/proyecto_dev/src
+# Displays all files and folders in the personal directory with detailed information.
+ls -la ~/
