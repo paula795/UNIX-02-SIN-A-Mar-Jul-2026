@@ -49,4 +49,13 @@ ls -la ~/antes_de_newgrp.txt ~/dentro_de_newgrp.txt
 # Create a password-protected group
 groupadd grupo_restringido
 # It asked me for a new password.
+#It allows you to manage the restricted_group, such as adding users or assigning a password to the group.
 gpasswd grupo_restringido                                                                          
+# Temporarily change the active primary group to the restricted_group group.
+newgrp grupo_restringido
+# Rerun group management to modify restricted group users or settings.
+gpasswd grupo_restringido
+# Create a new user named paula and the -m option automatically generates their home directory.
+useradd -m paula
+# Change the current session to the user paula.
+su paula 
