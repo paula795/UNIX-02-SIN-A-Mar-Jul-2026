@@ -75,3 +75,17 @@ rm -r Work
 # Check if the Work folder still exists. It shows an error because it was deleted.
 ls Work 
 #ls: cannot access 'Work': No such file or directory
+
+# Module 14
+
+# Change to the Documents directory where the text filtering exercises will be performed.
+cd /workspaces/UNIX-02-SIN-A-Mar-Jul-2026/Documents
+
+# Copy the system's passwd file to the current directory so you can work with it without modifying the original file.
+cp /etc/passwd .
+
+# Find and display the lines in the passwd file that contain the pattern sysadmin.
+grep sysadmin passwd
+
+# Find and display the lines in the passwd file that contain the pattern root. (We use root because we don't have the requested file in practice.)
+grep root passwd
