@@ -148,3 +148,23 @@ grep 'e*' red.txt
 
 # Find words that contain at least one letter e and that can continue with more consecutive e's.
 grep 'ee*' red.txt
+
+# Module 15 
+
+# Return to the current user's home directory.
+cd
+
+# Try switching to the administrator (root) user to gain elevated privileges.
+su -
+
+# Try to shut down the system immediately.
+shutdown now 
+
+# Displays the current system date and time.
+date 
+
+# Schedule the system to shut down for the specified time (01:51).
+shutdown 01:51   
+
+# Schedule the system to shut down in one minute and display the message "Goodbye World!" to connected users.
+shutdown +1 "Goodbye World!"
