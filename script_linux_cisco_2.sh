@@ -216,3 +216,20 @@ sudo apt-get upgrade
 
 # Uninstall cowsay and also delete its configuration files.
 sudo apt-get purge cowsay
+
+# Module 19
+
+# It allows you to change the password of the user who is currently logged in.
+passwd 
+
+# Displays information about the status of the sysadmin user's password, such as the date of the last change and the expiration policy.
+passwd -S sysadmin 
+
+# Switch to the administrator (root) user account to gain elevated privileges.
+su root
+
+# Allows the root user to change the sysadmin account password.
+passwd sysadmin
+
+# Close the current session and return to the previous user or close the terminal.
+exit
