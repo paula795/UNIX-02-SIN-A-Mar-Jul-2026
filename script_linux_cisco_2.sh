@@ -89,3 +89,62 @@ grep sysadmin passwd
 
 # Find and display the lines in the passwd file that contain the pattern root. (We use root because we don't have the requested file in practice.)
 grep root passwd
+
+# Module 14.2 
+
+# Search for all lines containing the word root in the passwd file.
+grep 'root' passwd
+
+# Search only for lines that begin with the word root. The ^ symbol indicates that the match must be at the beginning of the line.
+grep '^root' /etc/passwd
+
+# Displays the entire contents of the alpha-first.txt file on screen
+cat alpha-first.txt 
+
+# Look for the lines that end with the letter r. The symbol $ represents the end of a line.
+grep 'r$' alpha-first.txt
+
+# Displays the full contents of the file red.txt
+cat red.txt
+
+# Find words that begin with the letter r, have two characters in between, and end with the letter f.
+grep 'r..f' red.txt
+
+# Look for matches that begin with r, continue with any two characters, and end with the letter d.
+grep 'r..d' red.txt
+
+# Search for lines that contain at least four consecutive characters, using the period as a wildcard to represent any character.
+grep '....' red.txt  
+
+# Search within the /etc/passwd file for words or text sequences that match the specified pattern.
+grep 'r..t' /etc/passwd
+
+# Displays the full contents of the profile.txt file
+cat profile.txt
+
+# Search for lines containing one or more numeric characters within the file from 0 to 9.
+grep '[0-9]' profile.txt
+
+# Look for lines that include characters other than numbers. The symbol ^ inside the brackets indicates negation.
+grep '[^0-9]' profile.txt
+
+# Search for lines that contain a period (.) as a literal character within the file.
+grep '[.]' profile.txt
+
+# Displays the contents of the file red.txt
+cat red.txt
+
+# Find words that begin with r and end with d, allowing that there are no or several e's between them.
+grep 're*d' red.txt
+
+# It refers to lines with the absence or presence one or more times of the character o or the character e
+grep 'r[oe]*d' red.txt
+
+# Search for patterns related to the letter z, allowing it to appear none, once, or several times.
+grep 'z*' red.txt
+
+# Look for patterns that contain the letter e repeated zero or more times within the text.
+grep 'e*' red.txt
+
+# Find words that contain at least one letter e and that can continue with more consecutive e's.
+grep 'ee*' red.txt
