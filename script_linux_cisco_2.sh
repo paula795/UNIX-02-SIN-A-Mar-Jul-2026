@@ -182,3 +182,15 @@ ping -c 4 192.168.1.3
 
 # Close the current session or exit the command interpreter in use.
 exit 
+
+# Module 17
+
+# Displays the processes that are being executed by the user in the current session.
+ps
+
+# It displays all processes that are active on the system, regardless of the user running them.
+ps -e
+
+# It presents a detailed list of all active processes, including information such as the owner user, process identifier (PID), parent process, and the commands used to start them.
+ps -ef
+
