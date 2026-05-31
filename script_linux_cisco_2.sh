@@ -168,3 +168,17 @@ shutdown 01:51
 
 # Schedule the system to shut down in one minute and display the message "Goodbye World!" to connected users.
 shutdown +1 "Goodbye World!"
+
+# Module 16
+
+# Displays the system's network interface configuration, including IP addresses, connection status, and other network-related information.
+ifconfig
+
+# Send 4 test packets to the device with IP address 192.168.1.2 to verify network connectivity and measure response time.
+ping -c 4 192.168.1.2 
+
+# Send 4 test packets to the device with IP address 192.168.1.3 to check communication between devices on the network.
+ping -c 4 192.168.1.3
+
+# Close the current session or exit the command interpreter in use.
+exit 
