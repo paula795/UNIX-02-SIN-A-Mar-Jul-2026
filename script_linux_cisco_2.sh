@@ -58,3 +58,20 @@ mv animals.txt zoo.txt
 
 # Module 13 
 
+# Permanently delete the linux.txt file.
+rm linux.txt
+
+# Check if the linux.txt file still exists. It will show an error because it was deleted.
+ls linux.txt
+# ls: cannot access 'linux.txt': No such file or directory
+
+# It tries to delete the Work folder, but fails because rm does not delete directories by default.
+rm Work
+# rm: cannot remove 'Work': Is a directory
+
+# Delete the Work folder and all its contents using the recursive -r option.
+rm -r Work
+
+# Check if the Work folder still exists. It shows an error because it was deleted.
+ls Work 
+#ls: cannot access 'Work': No such file or directory
