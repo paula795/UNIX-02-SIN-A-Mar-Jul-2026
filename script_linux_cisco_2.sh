@@ -49,3 +49,12 @@ mv numbers.txt letters.txt alpha.txt School
 
 # Verifying the moved files.
 ls School
+
+# List the contents of the current Documents directory.
+ls 
+
+# Moving a file within the same directory is an efficient way to rename it. For example, in the following example, the file animals.txt is renamed zoo.txt
+mv animals.txt zoo.txt
+
+# Module 13 
+
