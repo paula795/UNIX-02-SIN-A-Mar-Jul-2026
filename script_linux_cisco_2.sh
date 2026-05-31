@@ -26,11 +26,26 @@ git status
 git push -u codeberg linux_cisco_2
 
 # Module 12
-# Creating the folder to start the second part of the course.
-mkdir Documents
-#
-cd ~/Documents
-#
+# Creating a CSV file for the move command example.
 touch people.csv
-#
-ls 
+
+# Creating the Work directory.
+mkdir Work
+
+# Moving the CSV file to the Work directory.
+mv people.csv Work
+
+# Verifying the moved file.
+ls Work
+
+# Creating text files for the multiple file move example.
+touch numbers.txt letters.txt alpha.txt
+
+# Creating the School directory.
+mkdir School
+
+# Moving multiple files to the School directory.
+mv numbers.txt letters.txt alpha.txt School
+
+# Verifying the moved files.
+ls School
