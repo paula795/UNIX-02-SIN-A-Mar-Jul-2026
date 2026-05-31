@@ -233,3 +233,40 @@ passwd sysadmin
 
 # Close the current session and return to the previous user or close the terminal.
 exit
+
+# Module 20 
+
+# Change to the Documents directory where the practice files are located.
+cd /workspaces/UNIX-02-SIN-A-Mar-Jul-2026/Documents
+
+# Displays the contents of the food.txt file.
+cat food.txt
+
+# Copy the contents of food.txt into a new file called newfile1.txt.
+cat food.txt > newfile1.txt
+
+# Displays the content stored in newfile1.txt.
+cat newfile1.txt
+
+# Print the message "Hello" on the terminal.
+echo "Hello"
+
+# Displays the content stored in newfile1.txt.
+cat newfile1.txt
+
+# Replace all the contents of newfile1.txt with the specified text.
+echo "I like food." > newfile1.txt
+
+# Displays the content stored in newfile1.txt.
+cat newfile1.txt
+
+# Add the text to the end of the file without deleting what it already contains.
+echo "This food is good." >> newfile1.txt
+
+# Displays the content stored in newfile1.txt.
+cat newfile1.txt
+
+# Module 21 
+
+# Open the newfile.txt file using the vi text editor, allowing you to view, edit, or create files from the terminal.
+vi newfile.txt
