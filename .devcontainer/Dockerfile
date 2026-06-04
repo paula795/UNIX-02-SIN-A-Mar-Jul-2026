@@ -113,7 +113,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     tree \
     jq \
     \
-    # === Páginas de manual (comando `man`) ===
+    # === Páginas de manual (comando man) ===
     # La imagen base de Kali viene sin documentación para
     # ahorrar espacio. La reinstalamos porque en el curso "man bash" o
     # "man grep" es material de consulta obligada.
@@ -188,6 +188,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Por defecto Docker usa /bin/sh (un shell más limitado y antiguo). Lo
 # cambiamos a bash por si agregamos más instrucciones con sintaxis
 # moderna (arrays, [[ ]], etc.).
+
 SHELL ["/bin/bash", "-c"]
 
 
@@ -218,15 +219,11 @@ RUN git config --system --add safe.directory '*' \
 # propia terminal integrada de VS Code, pero es buena práctica dejarla
 # definida para que la imagen sea usable también con Docker puro.
 # Prompt del curso para bash
-RUN chsh -s /usr/bin/bash root
+#RUN chsh -s /usr/bin/zsh root
 
-RUN cat >> /root/.zshrc <<'EOF'
+RUN cat >> /root/.bashrc <<'EOF'
 
-PROMPT='%F{cyan}[Paula_Simbaña]%f %F{yellow}%1~%f %(?.%F{green}√.%F{red}X %?)%f %# '
+PS1='\[\e[36m\][Paula_Simbaña]\[\e[0m\] \[\e[33m\]\W\[\e[0m\] '
 EOF
 
-CMD ["/usr/bin/bash"]
-
-
-
-
+CMD ["/bin/bash"]
