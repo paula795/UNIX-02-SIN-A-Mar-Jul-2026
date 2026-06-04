@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -x
 bash --version
 env
 echo ${SHEL}
@@ -16,3 +17,4 @@ bash -r blackhatbash1.sh
 bash -n blackhat1bash.sh
 # If the script contains a while true, a for ((;;)) or some condition that never ends, you will see that it prints lines nonstop.
 bash -x blackhat1bash.sh
+set +x
