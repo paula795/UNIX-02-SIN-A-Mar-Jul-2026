@@ -30,3 +30,10 @@ cat stdout.txt
 cat stderr.txt
 lzl 2> error.txt
 cat error.txt
+
+cat < output.txt
+
+cat << EOF
+ Black Hat Bash
+ by No Starch Press
+EOF
