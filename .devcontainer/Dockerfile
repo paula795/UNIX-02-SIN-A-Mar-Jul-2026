@@ -30,6 +30,18 @@
 #predefined operating system and software, which serves as the base file system for our container (BHB, Chapter 3).
 # - Why Kali Linux?: Because it is a rolling release distribution that includes many professional 
 #security and networking tools, saving us from having to install them manually (BHB, Chapter 3).
+
+# Block b: Image Layers and Caching Mechanism
+
+# Image, Layer, and Cache Concept:
+# Docker builds an image by processing the Dockerfile from top to bottom.
+# Each instruction generates a new layer within the image. These layers can be cached and reused 
+#in future builds, avoiding re-executing steps that haven't changed.
+# Why Instruction Order Matters?
+#Docker checks the layers in the same order they appear. If an instruction changes, the cache for that layer 
+#becomes invalid, and all subsequent layers must be rebuilt. For this reason, instructions that change infrequently 
+#are usually placed at the beginning to improve efficiency and reduce build time. (BHB, Chapter 3).
+
 FROM kalilinux/kali-rolling:latest
 
 
