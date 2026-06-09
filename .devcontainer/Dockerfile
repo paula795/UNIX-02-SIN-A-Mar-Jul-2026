@@ -67,6 +67,28 @@ FROM kalilinux/kali-rolling:latest
 #
 # La barra invertida "\" al final de cada línea significa "esto continúa
 # en la línea siguiente". Solo es para legibilidad.
+
+# Block c: Defining Environment Variables (ENV)
+
+# What does the ENV instruction do?
+# The ENV instruction allows you to set environment variables that will be
+# available to the processes and applications running within the container. 
+# These variables function as global configuration parameters
+# that modify the system's behavior without needing to alter the program code. Black Hat Bash (Chapter 1)
+# describes environment variables as a mechanism used by
+# shells and applications to adapt their operation according to the execution environment.
+
+# Explanation of each configured variable:
+
+    # DEBIAN_FRONTEND=noninteractive: allows package installation to be performed automatically without 
+# requesting user interaction, preventing the image build from stopping while waiting for responses.
+
+# The LANG and LC_ALL variables: set the system's locale and enable UTF-8 encoding, ensuring that special characters and symbols are interpreted correctly.
+
+# The `TERM=xterm-256color` command informs applications about the terminal's capabilities, enabling 
+# the use of 256 colors so that editors and tools can display highlighted text correctly.
+
+# Environment variables are covered in Chapter 1 of Black Hat Bash.
 ENV DEBIAN_FRONTEND=noninteractive \
     LANG=es_ES.UTF-8 \
     LC_ALL=es_ES.UTF-8 \
