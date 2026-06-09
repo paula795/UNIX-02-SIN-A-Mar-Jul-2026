@@ -23,6 +23,13 @@
 # En lugar de partir de cero, partimos de la imagen oficial de Kali Linux
 # en su versión "rolling" (actualización continua, siempre al día).
 # Todo lo que instalemos más abajo se apila ENCIMA de esta base.
+
+# Block a: Selecting a base image to build the development environment.
+
+# - What is a base image?: It can be described as the initial read-only template containing a 
+#predefined operating system and software, which serves as the base file system for our container (BHB, Chapter 3).
+# - Why Kali Linux?: Because it is a rolling release distribution that includes many professional 
+#security and networking tools, saving us from having to install them manually (BHB, Chapter 3).
 FROM kalilinux/kali-rolling:latest
 
 
