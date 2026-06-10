@@ -294,6 +294,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Por defecto Docker usa /bin/sh (un shell más limitado y antiguo). Lo
 # cambiamos a bash por si agregamos más instrucciones con sintaxis
 # moderna (arrays, [[ ]], etc.).
+
+# Block h: Configuring the default shell for the build
+
+# By default, Docker uses /bin/sh to execute RUN instructions.
+# This configuration replaces it with Zsh so that the following
+# instructions are executed using a more advanced and flexible shell.
+# Zsh incorporates additional features that facilitate working in
+# UNIX environments and allows you to take advantage of a more complete experience than
+# offered by the default shell. The function of shells as
+# command interpreters and their role in executing instructions is
+# related to the concepts studied in Black Hat Bash (Chapter 1).
+
 SHELL ["/bin/zsh", "-c"]
 
 
