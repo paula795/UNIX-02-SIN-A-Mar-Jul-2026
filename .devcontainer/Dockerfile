@@ -333,6 +333,17 @@ WORKDIR /workspaces
 # - pull.rebase false: merge por defecto al hacer pull (más intuitivo)
 # - git lfs install --system: registra los hooks de LFS globalmente para
 #   que, si un repo los necesita, funcionen sin sorpresas.
+
+# Block j: Global Git Configuration and Large File Support
+
+# - What each line configures:
+# * git config --system: Applies Git configurations at the container level.
+# In this case, it defines which directories are considered safe, sets "main" as the default branch,
+# and configures the default behavior of git pull.
+# git lfs install --system: Enables Git Large File Storage (LFS) system-wide,
+# allowing you to work with repositories that contain large files without storing them directly in the main Git history.
+# (Black Hat Bash, Chapter 3).
+
 RUN git config --system --add safe.directory '*' \
  && git config --system init.defaultBranch main \
  && git config --system pull.rebase false \
