@@ -386,6 +386,16 @@ RUN cat >> /root/.zshrc <<'EOF'
 PROMPT='%F{cyan}[Paula_Simbaña]%f %F{yellow}%1~%f %(?.%F{green}√.%F{red}X %?)%f %# '
 EOF
 
+# Block m: Container's default execution command
+
+# Difference between CMD and RUN:
+# RUN is used during image build to install or
+# configure elements that will be permanently saved. In contrast,
+# CMD defines which program will run when the container starts.
+# In this case, the container will automatically open a Zsh terminal
+# so the user can start working immediately (Black Hat
+# Bash, Chapter 3).
+
 CMD ["/usr/bin/zsh"]
 
 
