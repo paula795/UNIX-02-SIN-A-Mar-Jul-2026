@@ -315,6 +315,15 @@ SHELL ["/bin/zsh", "-c"]
 # Codespaces siempre monta el código del repositorio en
 # /workspaces/<nombre-del-repo>. Establecer /workspaces aquí hace que las
 # terminales se abran cerca de nuestros archivos del curso.
+
+# Block i: Defining the default working directory
+
+# The WORKDIR instruction sets the directory from which
+# subsequent instructions will be executed within the container. This
+# avoids specifying full paths in each command and keeps the working environment
+# organized. If the directory does not exist, Docker creates it
+# automatically (Black Hat Bash, Chapter 3).
+
 WORKDIR /workspaces
 
 # Configuración de Git para el contenedor:
