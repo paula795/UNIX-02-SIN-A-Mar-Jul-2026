@@ -367,6 +367,20 @@ RUN git config --system --add safe.directory '*' \
 
 RUN chsh -s /usr/bin/zsh root
 
+# Block L: Configuring the Interactive Environment Using Here-Document
+
+# What is a heredoc?
+# A heredoc allows you to write multiple lines of text directly within
+# the Dockerfile and send them to a file or command all at once. In
+# this case, it's used to add configuration to the .zshrc file without
+# manually editing it (Black Hat Bash, Chapter 1).
+
+# What the PROMPT line configures?
+# The PROMPT variable defines how the command line will look when the
+# user opens a terminal. Here, it's customized to display useful information
+# with colors, making it easier to identify where you're
+# working within the container (Black Hat Bash, Chapter 1).
+
 RUN cat >> /root/.zshrc <<'EOF'
 
 PROMPT='%F{cyan}[Paula_Simbaña]%f %F{yellow}%1~%f %(?.%F{green}√.%F{red}X %?)%f %# '
