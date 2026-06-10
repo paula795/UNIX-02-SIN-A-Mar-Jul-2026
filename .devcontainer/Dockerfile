@@ -356,6 +356,15 @@ RUN git config --system --add safe.directory '*' \
 # propia terminal integrada de VS Code, pero es buena práctica dejarla
 # definida para que la imagen sea usable también con Docker puro.
 # Prompt del curso para bash
+
+# Block k: Changing the default shell for the root user
+
+# The chsh (change shell) command modifies the default shell of a
+# user. In this case, Zsh is configured as the primary shell for root,
+# so that interactive sessions within the container use
+# this interpreter instead of the default. This allows you to take advantage of
+# the features and customizations configured for Zsh (Black Hat Bash, Chapter 1).
+
 RUN chsh -s /usr/bin/zsh root
 
 RUN cat >> /root/.zshrc <<'EOF'
