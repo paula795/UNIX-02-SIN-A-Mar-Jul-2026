@@ -138,6 +138,37 @@ RUN echo "wireshark-common wireshark-common/install-setuid boolean false" \
 # El "&&" encadena comandos: ejecuta el siguiente SOLO SI el anterior
 # terminó bien. Si algo falla, el build se detiene con error (que es lo
 # que queremos: mejor un error claro que una imagen rota).
+
+# Block e: Bulk Installation of Main Packages and Tools
+
+# - update vs install: 'apt-get update' updates the list of available packages from the repository servers, 
+# while 'apt-get install' downloads and installs the specific programs.
+# - Flags -y and --no-install-recommends: The '-y' flag automatically responds "yes" to installation confirmations, 
+# avoiding manual intervention. '--no-install-recommends' prevents the download of optional or secondary packages.
+
+# - Why a Single Giant RUN?
+# Each RUN instruction creates a new permanent layer within the Docker image. Combining everything with operators avoids 
+# creating unnecessary layers and drastically reduces the final container size (Black Hat Bash, Chapter 3).
+
+# - Meaning of && and \: '&&' is a logical operator that executes the next command only if the previous one completed successfully
+# (Black Hat Bash, Chapter 1). The backslash '\' at the end of each line indicates that the instruction continues on the next line.
+
+# - What do the installed tools do?
+
+# gawk, sed, grep:
+# grep allows you to search for patterns within text, sed performs transformations and substitutions on text streams, and gawk
+# facilitates the processing of information structured by columns or fields (Black Hat Bash, Chapter 2).
+
+# shellcheck: Analyzes Bash scripts to find syntax errors and bad practices.
+# nmap: Allows you to discover available hosts and services on a network.
+
+# tcpdump / tshark: tcpdump captures network traffic directly from the terminal, and tshark provides packet analysis capabilities
+# similar to Wireshark but from the command line.
+
+# tor / proxychains4: Tor allows connections to pass through multiple nodes before reaching their destination, while proxychains4 offers
+# a simple way to run applications using user-configured proxies. * jq: A processor specialized in reading, filtering, and modifying data in JSON format.
+
+# man-db: Installs system manuals so you can consult command help in the terminal.
 RUN apt-get update && apt-get install -y --no-install-recommends \
     \
     # === Editores de texto y shells (intérpretes de comandos) ===
