@@ -272,6 +272,18 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  # apt deja archivos de caché que ya no necesitamos después de instalar.
  # Borrarlos aquí (en el mismo RUN) hace la capa final más pequeña.
  # Si los borráramos en otro RUN, seguirían ocupando en la capa anterior.
+
+# Block g: Cleaning temporary files in the same RUN
+
+# Why clean in the same RUN instruction?
+# Each RUN instruction creates a new layer within the Docker image.
+# If temporary files are deleted in a later layer, they will
+# still exist in the previous layers and continue to occupy
+# space within the image. Performing installation and cleanup in
+# the same instruction prevents these files from being stored in an
+# intermediate layer, reducing the final size of the image and improving its
+# storage efficiency (Black Hat Bash, Chapter 3).
+
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
