@@ -14,5 +14,7 @@ cp output.txt backup.txt
 # displays the file contents in the terminal.
 cat output.txt
 # grants execution permissions to the script for the owner user.
-chmod u+x exercise1.sh
-./exercise1.sh Paula Simbaña #Run the script passing “Paula” as the first argument and “Simbaña” as the second.
+
+# To execute it is used: 
+# chmod u+x exercise1.sh
+#./exercise1.sh Paula Simbaña #Run the script passing “Paula” as the first argument and “Simbaña” as the second.
