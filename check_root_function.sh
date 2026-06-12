@@ -28,3 +28,13 @@ fi
 #What is EUID?
 #EUID stands for Effective User ID.
 #It's a special Bash variable that stores the ID number of the user running the process.
+
+# Paula user creation
+# Create a new user named Paula and automatically generate their home directory
+useradd -m paula 
+# Switch the current session to the user Paula, loading her full work environment.
+su - paula 
+# Inside the other user account, what we do is run the file we want.
+# Run the check_root_function.sh script using the Bash interpreter.
+bash check_root_function.sh
+# Answer: User is not root!
