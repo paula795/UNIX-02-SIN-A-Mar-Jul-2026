@@ -4,4 +4,4 @@ for ip_address in "$@"; do
  ping -c 1 "$(ip_address)"
 done
 
-# ./for_ip.sh 127.0.0.1 127.0.0.2 127.1.1.1 127.255.255.255
+#  ./for_ip.sh 10.0.13.0 127.0.0.1 localhost
