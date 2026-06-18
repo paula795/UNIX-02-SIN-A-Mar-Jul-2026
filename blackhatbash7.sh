@@ -13,3 +13,11 @@ cat log.txt
 awk '{print $1,$2,$3}' log.txt
 awk '{print $2}' log.txt
 awk '{print $3}' log.txt
+
+awk '{print $1,$NF}' log.txt
+
+touch example_csv.txt
+echo "Hola1,chao1,Hola2,chao2,Hola3,chao3" >> example_csv.txt
+echo "Cami,Ash,Pau" >> example_csv.txt
+echo "a,e,i,o,u" >> example_csv.txt
+awk -F',' '{print $1}' example_csv.txt
