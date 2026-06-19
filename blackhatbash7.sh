@@ -50,5 +50,6 @@ sleep 300 &
 jobs 
 fg %1
 
-cnohup ./exercise_solution.sh mysite google.com > nohup.out 2>&1 &
-pgrep -af exercise_solution.sh
+chmod +x exercise_solution.sh #It allows the script to be run directly from the terminal.
+nohup ./exercise_solution.sh mysite google.com > nohup.out 2>&1 & #Run the script in the background and allow it to continue running even if the terminal is closed.
+pgrep -af exercise_solution.sh #Check if the script is still running and display its PID along with the full command.

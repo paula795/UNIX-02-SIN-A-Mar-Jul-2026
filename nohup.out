@@ -1,1 +1,2 @@
-bash: cnohup: orden no encontrada
+nohup: no se tendrá en cuenta la entrada
+./exercise_solution.sh: línea 36: 0: orden no encontrada

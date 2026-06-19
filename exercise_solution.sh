@@ -32,4 +32,4 @@ else
   # Ends the conditional statement that evaluates the ping result.
 fi
 
-sleep 100
+sleep 1000
