@@ -32,3 +32,6 @@ sed 's/Mozilla/Godzilla/g' log.txt
 grep "Mozilla" log.txt
 grep "Godzilla" log.txt
 sed 's/Mozilla/Godzilla/g' log.txt > newlog.txt
+
+sed '1d' log.txt
+sed -i '1d' log.txt
