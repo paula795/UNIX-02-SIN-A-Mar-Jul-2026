@@ -36,3 +36,11 @@ sed 's/Mozilla/Godzilla/g' log.txt > newlog.txt
 sed '1d' newlog.txt
 sed -i '1d' newlog.txt
 diff log.txt newlog.txt 
+
+sed '1d' newlog.txt
+sed -i '37d' newlog.txt
+diff log.txt newlog.txt 
+
+sed 's/ //g' log.txt > newlog1.txt
+sed '8,10d' newlog1.txt
+
