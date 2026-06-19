@@ -50,3 +50,5 @@ sleep 300 &
 jobs 
 fg %1
 
+cnohup ./exercise_solution.sh mysite google.com > nohup.out 2>&1 &
+pgrep -af exercise_solution.sh

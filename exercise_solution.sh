@@ -31,3 +31,5 @@ else
   echo "failure,${NAME},${DOMAIN},$(date)" >> "${OUTPUT_FILE}"
   # Ends the conditional statement that evaluates the ping result.
 fi
+
+sleep 100
